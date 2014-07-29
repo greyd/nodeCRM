@@ -1,0 +1,30 @@
+{
+  "name": "nodeCRM",
+  "version": "0.0.1",
+  "description": "Yet another node.js CRM",
+  "main": "app.js",
+  "scripts": {
+    "start": "supervisor -w app,server.js server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:greyd/nodeCRM.git"
+  },
+  "keywords": [
+    "CRM"
+  ],
+  "author": "Valerii Pavlov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greyd/nodeCRM/issues"
+  },
+  "homepage": "https://github.com/greyd/nodeCRM",
+  "dependencies": {
+    "body-parser": "^1.5.2",
+    "colors": "^0.6.2",
+    "express": "^4.7.2",
+    "mysql": "^2.4.1",
+    "orm": "^2.1.18"
+  }
+}
