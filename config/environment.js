@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var serveStatic = require('serve-static')
 
 module.exports = function (app) {
-  app.use(serveStatic(path.join(settings.path, 'public')));
+  app.use(serveStatic(path.join(settings.path, 'app-ui')));
   app.use(bodyParser.json());
   app.use(function (req, res, next) {
     models(function (err, db) {

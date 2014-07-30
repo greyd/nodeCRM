@@ -1,5 +1,5 @@
 module.exports = function (orm, db) {
-  db.define("person", {
+  db.define("user", {
       name      : String,
       surname   : String,
       age       : Number, // FLOAT
