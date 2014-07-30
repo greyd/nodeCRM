@@ -3,4 +3,4 @@
 node_modules
 
 config/settings.js
-app-ui/js/lib/*
+app-ui/bower_components/*

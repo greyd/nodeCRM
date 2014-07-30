@@ -1,4 +1,4 @@
 {
-	"directory": "app-ui/js/lib",
+	"directory": "app-ui/bower_components",
 	"interactive": false
 }
