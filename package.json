@@ -4,7 +4,7 @@
   "description": "Yet another node.js CRM",
   "main": "app.js",
   "scripts": {
-    "start": "supervisor -w app,server.js server.js",
+    "start": "supervisor -w app,config,server.js server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "body-parser": "^1.5.2",
     "colors": "^0.6.2",
     "express": "^4.7.2",
+    "less-middleware": "^1.0.3",
     "mysql": "^2.4.1",
     "orm": "^2.1.18",
     "serve-static": "^1.4.3"
