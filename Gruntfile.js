@@ -5,7 +5,8 @@ module.exports = function (grunt) {
 		watch: {
 			options: {livereload: true},
 			js: {files: ['app-ui/src/**/*.js']},
-			css: {files: ['app-ui/styles/less/*.less']}
+			css: {files: ['app-ui/styles/less/*.less']},
+			html: {files: ['app-ui/**/*.html']}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-watch');
