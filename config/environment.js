@@ -5,11 +5,11 @@ var models   = require('../app/models/');
 var bodyParser = require('body-parser');
 var serveStatic = require('serve-static');
 var lessMiddleware = require('less-middleware');
-console.log(path.join(settings.path, 'app-ui/styles/less'));
+
 module.exports = function (app) {
-	app.use(lessMiddleware('less', {
-		dest: 'css',
-		pathRoot: path.join(settings.path, 'app-ui/styles/')
+	app.use(lessMiddleware('styles/less/', {
+		dest: 'styles/css/',
+		pathRoot: path.join(settings.path, 'app-ui')
 	}));
 	app.use(serveStatic(path.join(settings.path, 'app-ui')));
 	app.use(bodyParser.json());

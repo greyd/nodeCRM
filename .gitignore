@@ -4,3 +4,4 @@ node_modules
 
 config/settings.js
 app-ui/bower_components/*
+app-ui/styles/css/*
