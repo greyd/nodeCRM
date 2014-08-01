@@ -6,13 +6,21 @@
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="/styles/css/all.css">
 </head>
-<body ng-controller="User">
-	<ul>
-		<li ng-repeat="phone in phones">
-			{{phone.name}}
-			<p>{{phone.snippet}}</p>
-		</li>
-	</ul>
+<body>
+	<header class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">
+					nodeCRM
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div ng-include="'/src/partials/user.html'"></div>
+	</div>
+
 	<script src="bower_components/requirejs/require.js" data-main="src/main.js"></script>
 	<script src="//localhost:35729/livereload.js"></script>
 </body>

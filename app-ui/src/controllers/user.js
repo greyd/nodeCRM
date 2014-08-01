@@ -1,13 +1,8 @@
 define(['./module'], function (controllers) {
 	'use strict';
-	controllers.controller('User', function ($scope) {
-		$scope.phones = [
-			{"name": "Nexus S",
-				"snippet": "Fast just got faster with Nexus S."},
-			{"name": "Motorola XOOM™ with Wi-Fi",
-				"snippet": "The Next, Next Generation tablet."},
-			{"name": "MOTOROLA XOOM™",
-				"snippet": "The Next, Next Generation tablet."}
-		];
+	controllers.controller('User', function ($scope, $http) {
+		$http.get('/user').success(function(data) {
+			$scope.users = data;
+		});
 	});
 });
